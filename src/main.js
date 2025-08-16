@@ -154,7 +154,6 @@ const init = async () => {
         input.focus()
       })
       .catch((error) => {
-        console.error(error)
         watchedFormState.formState = {
           state: 'invalid',
           message: i18nextInstance.t(`errors.${error.message}`),
